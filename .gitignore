@@ -1,0 +1,5 @@
+dataset/videos/fight/*.mp4
+dataset/videos/noFight/*.mp4
+
+output/fight/*
+output/noFight/*
