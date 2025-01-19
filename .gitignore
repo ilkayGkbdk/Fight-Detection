@@ -4,5 +4,6 @@ dataset/videos/noFight/*.mp4
 output/fight/*
 output/noFight/*
 
-handled_features/*
-rnn_models/*
+handled_features/data_x_ext.npy
+handled_features/data_y.npy
+rnn_models/fightD_model.h5
