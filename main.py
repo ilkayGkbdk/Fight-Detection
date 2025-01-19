@@ -67,7 +67,7 @@ def start(en_model, de_network):
 
             y_val_value = y_val[0][0]
             print(y_val_value)
-            if 1e-08 <= y_val_value <= 1e-06:
+            if 2.4063592e-08 <= y_val_value <= 2.7784926e-08:
                 class_val = 1  # Fight
             else:
                 class_val = 0  # NoFight
@@ -75,7 +75,7 @@ def start(en_model, de_network):
             prediction = classes[class_val]
             default = prediction
             if default == 'fight':
-                color = (0, 0, 255)
+                color = (255, 0, 0)
             else:
                 color = (0, 255, 0)
 
@@ -86,7 +86,7 @@ def start(en_model, de_network):
             print(y_val)
 
             y_val_value = y_val[0][0]
-            if 1e-08 <= y_val_value <= 1e-06:
+            if 2.4063592e-08 <= y_val_value <= 2.7784926e-08:
                 class_val = 1  # Fight
             else:
                 class_val = 0  # NoFight
@@ -94,7 +94,7 @@ def start(en_model, de_network):
             prediction = classes[class_val]
             default = prediction
             if default == 'fight':
-                color = (0, 0, 255)
+                color = (255, 0, 0)
             else:
                 color = (0, 255, 0)
 
@@ -105,7 +105,7 @@ def start(en_model, de_network):
         cv2.imshow('Fight Detection Live', frame)
 
         key = cv2.waitKey(1) & 0xFF
-        if key == 27:
+        if key == 27: # ESC Key
             print("EXITING")
             break
 
