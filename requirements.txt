@@ -1,0 +1,8 @@
+argparse
+numpy
+tensorflow
+keras
+pillow
+opencv-python
+matplotlib
+tqdm

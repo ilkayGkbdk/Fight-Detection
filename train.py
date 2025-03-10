@@ -1,6 +1,5 @@
 import os
 import numpy as np
-import tensorflow as tf
 from keras._tf_keras.keras.layers import Dense,BatchNormalization,LSTM,Dropout,Input
 from keras._tf_keras.keras.models import Model
 from keras._tf_keras.keras.callbacks import ReduceLROnPlateau
